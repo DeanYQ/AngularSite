@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Deploy to Auzre
+1. [FTP Method](https://www.newventuresoftware.com/blog/deploying-angular-4-cli-apps-to-iis-on-azure)
+2. VSTS Method  
+Help1 : https://blogs.msdn.microsoft.com/wael-kdouh/2017/09/11/deploying-your-angular-application-to-azure-using-visual-studio-team-services-vsts/  
+Help2 : https://medium.com/@levifuller/how-to-deploy-an-angular-cli-application-built-on-asp-net-1fa03c0ca365  
+Help 3: https://johnpapa.net/deploy-angular-to-azure-vsts-angular-cli/
