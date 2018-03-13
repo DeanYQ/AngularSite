@@ -1,0 +1,68 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened="true" class="fixed-left-side-nav">
+        <div class="left-chart-nav">
+            <div class="chart-type-item">
+                <button mat-button>
+                    <a href="home/charts/#LineCharts">
+                        <div class="chart-type-link">
+                            <div>
+                                <img src='../../../../assets/LineChartImage.png' class="chart-type-image">
+                            </div>
+                            <div class="chart-type-spacer"></div>
+                            <div class="chart-type-text">Line</div>
+                        </div>
+                    </a>
+                </button>
+            </div>
+            <div class="chart-type-item">
+                <button mat-button>
+                    <a href="home/charts/#BarCharts">
+                        <div class="chart-type-link">
+                            <div>
+                                <img src='../../../../assets/BarChartImage.png' class="chart-type-image">
+                            </div>
+                            <div class="chart-type-spacer"></div>
+                            <div class="chart-type-text">Bar</div>
+                        </div>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content class="sidenav-content-container">
+        <div class="chart-detail-content">
+            <div class="chart-content-spacer"></div>
+            <a id="LineCharts" class="chart-content-text">Line</a>
+            <div class="chart-content-spacer"></div>
+            <div class="chart-detail-images-container">
+                <div>
+                    <a mat-button routerLink="../charts/stacked-area-chart" routerLinkActive="active">
+                        <div>
+                            <p class="chart-title-text">Stacked Area Chart</p>
+                            <img class="chart-detail-image" src='../../../../assets/StackedAreaChart.png'>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a mat-button routerLink="../charts/stacked-area-chart" routerLinkActive="active">
+                        <div>
+                            <p class="chart-title-text">Stacked Area Chart2</p>
+                            <img class="chart-detail-image" src='../../../../assets/StackedAreaChart.png'>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="chart-content-spacer"></div>
+            <a id="BarCharts" class="chart-content-text">Bar</a>
+            <div class="chart-content-spacer"></div>
+            <div>
+                <a mat-button routerLink="../charts/stacked-area-chart" routerLinkActive="active">
+                    <div>
+                        <p class="chart-title-text">Stacked Area Chart3</p>
+                        <img class="chart-detail-image" src='../../../../assets/StackedAreaChart.png'>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

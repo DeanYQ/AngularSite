@@ -1,0 +1,27 @@
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../../../../assets/signin-bg.jpg');
+  background-repeat: repeat;
+  height: 100%;
+}
+
+.title-img{
+  height: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.signin-spacer {
+  margin-top: 20px;
+}
+
+.signin-input {
+  width: 300px;
+}
+
+.signup-link {
+  margin-top: 20px;
+  font-size: 12px;
+}

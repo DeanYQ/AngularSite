@@ -1,0 +1,47 @@
+
+.expansion-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200;
+}
+
+.manage-container {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+}
+
+.content-header {
+    vertical-align: top
+}
+
+.change-password-form {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    align-items: center;
+    height: 100%;
+  }
+
+  .change-password-spacer {
+    margin-top: 20px;
+  }
+
+  .password-input {
+    width: 300px;
+  }
+
+  .change-password-container{
+      margin-left: 40px;
+  }
+
+  .highlight-hyperlink{
+      color: cornflowerblue;
+  }
+
+  .transparent-div{
+      color: transparent;
+      border: 1.5px solid transparent;
+      background: transparent;
+  }

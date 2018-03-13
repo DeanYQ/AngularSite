@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- support :hover selector for IE -->
+<html>
+  <head>
+      <meta charset="utf-8"> 
+      <title>To Be Determined</title> 
+  </head>
+  <body>
+    <div class="navbar-fixed-top">
+      <mat-toolbar color="primary" [class.mat-elevation-z2]="true">
+        <mat-toolbar-row>
+          <span class="title-img-container">
+            <img src="../../../../assets/title.png" class="title-img">
+          </span>
+          <span class="toolbar-item-container" style="margin-left:50px">
+            <button class="toolbar-item" (click)="home()" mat-button>HOME</button>
+          </span>
+          <span class="toolbar-item-container" style="margin-left:50px">
+              <div class="dropdown">
+                  <button class="toolbar-item" (click)="navigateToCharts()" mat-button>CHARTS</button>
+                  <div>
+                    <div class="transparent-space"></div>
+                    <div class="dropdown-content">
+                        <a href="home/charts" mat-button>Generator</a>
+                        <a href="home/charts" target="_blank" mat-button>Favorite</a>
+                    </div>
+                  </div>
+              </div>
+          </span>
+          <span class="toolbar-spacer"></span>
+          <div>
+            <button *ngIf="IsAuthenticated" mat-button (click)='navigateToManagementPage()'>{{loginAccountName}}</button>
+          </div>
+          <span class="toolbar-item-container">
+              <button class="toolbar-item" *ngIf="!IsAuthenticated" mat-button (click)='signin()'>Login</button>
+              <button class="toolbar-item" *ngIf="IsAuthenticated" mat-button (click)='signout()'>Logout</button>
+          </span>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </div>
+    <router-outlet></router-outlet>
+  </body>
+</html>
+
